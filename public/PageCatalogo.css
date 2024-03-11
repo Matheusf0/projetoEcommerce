@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); 
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Lato", sans-serif;-family: la;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/BackGround.jpg");
+    background-repeat: no-repeat;
+    
+}
+h1{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: aliceblue;
+    border-radius: 30%;
+}
+
+
+.container-produtos{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding-top: 80px;
+    justify-content: center;
+
+}
+.container-produtos produtos {
+    width: 80%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+    gap: 50px;
+   
+    
+}
+.container-produtos produtos .produto {
+    background-color: whitesmoke;
+    height: 30%;
+    width: calc(15% ); 
+    margin: 1px; 
+   
+    box-sizing: border-box; 
+    
+    transition: margin-top 0.3s;
+
+    border: 2px solid transparent;
+    box-shadow: 3px 3px 15px #888888;;
+}
+.container-produtos produtos .produto:hover {
+    border-color: #00BF62;
+    margin-top: -20px;
+    cursor: pointer;
+}
+.container-produtos produtos .produto img{
+    
+    max-width: 100%; /* Largura máxima será 100% do contêiner pai */
+    max-height: 200px; /* Altura máxima será 200 pixels */
+}
+
+/* Estilos do carrinho de compras */
+#cart {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0; /* Alterado para o lado direito */
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  #cart .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px; /* Alterado para o lado direito */
+    font-size: 36px;
+    margin-left: 50px; /* Alterado para o lado esquerdo */
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    top: 10px;
+    right: 10px; /* Alterado para o lado direito */
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  .content {
+    margin-right: 250px; /* Aumenta a margem à direita para acomodar o carrinho */
+  }
+  #cart h2 {
+    margin-top: 0;
+  }
+  
+  #cart ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #cart ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #cart ul li:last-child {
+    border-bottom: none;
+  }
+  
+  #total {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Estilo para o botão "Enviar Pedido via WhatsApp" */
+#cart button {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    border: none; /* Remove a borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor do mouse */
+    margin-top: 20px; /* Margem superior */
+    transition: background-color 0.3s; /* Transição suave da cor de fundo */
+  }
+  
+  /* Estilo para o botão quando o mouse passa sobre ele */
+  #cart button:hover {
+    background-color: #45a049; /* Cor de fundo mais escura */
+  }

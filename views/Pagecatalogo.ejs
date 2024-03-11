@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalogo</title>
+    <link rel="stylesheet" href="/PageCatalogo.css">
+</head>
+<body>
+    
+</body>
+</html>
+    
+    
+
+
+
+      
+    <div class="content">
+        <button class="openbtn" onclick="toggleNav()">☰ Abrir Carrinho</button>
+        <h2>Conteúdo Principal</h2>
+        <p>Este é o conteúdo principal da página.</p>
+    </div>
+    <div class="lateral">
+      <div id="cart" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-items">
+          <!-- Itens do carrinho serão adicionados dinamicamente aqui -->
+        </ul>
+        <p id="total">Total: R$ 0,00</p>
+        <button onclick="enviarPedidoViaWhatsApp('44999093250')">Enviar Pedido via WhatsApp</button>
+      </div>
+    </div>
+
+
+
+
+
+    <h1>Produtos</h1>
+    
+    <div class="container-produtos">
+        <produtos >
+            <!-- Conteúdo dos produtos será inserido aqui -->
+        </produtos>
+    </div>
+
+
+    <script src="./NavAdmin.js"></script>
+    </body>
+</html>

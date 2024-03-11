@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); 
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/BackGround.jpg");
+    background-repeat: no-repeat;
+    
+}
+h1{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container{
+  height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.scrollable-table {
+    width: 60%;
+    height: 50%; 
+    overflow: auto; /* Adicione a barra de rolagem quando o conteúdo for maior que as dimensões especificadas */
+    border: 1px solid #ccc; 
+    background-color: #ddd;
+}
+
+.scrollable-table thead {
+    position: sticky;
+    top: 0; 
+    background-color: #f2f2f2;
+}
+
+
+.scrollable-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black; 
+}
+.scrollable-table th, .scrollable-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+.scrollable-table th {
+    background-color: #f2f2f2;
+}
+
+.controle{
+    background-color: #211f83;
+    width: 60%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    border-radius: 15px 15px 0px 0px;    
+    padding: 5px;
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+   }
+   
+   .input {
+    width: 200px;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+
+.botao{
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.botao:hover{
+    cursor: pointer;
+    background-color: #9e9ea7;
+}
